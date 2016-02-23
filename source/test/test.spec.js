@@ -69,7 +69,7 @@ describe('Travel tests', () => {
     	var NY = new TLocation('New York JFK');
 
         var caseList = [
-	        new AirTravelCard(Ger, St, {
+        	new AirTravelCard(Ger, St, {
 	        	flightNumber: 'SK455',
 				gate: '45B',
 				seat: '3A',
@@ -87,12 +87,11 @@ describe('Travel tests', () => {
 				isAutoBaggage: true
 			})
 		];
-
 		tSorter.setList(caseList);
 		var routes = tSorter.getTravelDescription();
 		console.log(routes.fullDescription);
-        expect(routes.travelList).toEqual([2, 1, 0, 3]);
-    });
+		expect(routes.travelList).toEqual([2, 1, 0, 3]);
+	});
 
     it('Test3', () => {    
         var caseList = [
