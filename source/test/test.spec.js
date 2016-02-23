@@ -65,8 +65,8 @@ describe('Travel tests', () => {
     	var Mad = new TLocation('Madrid');
     	var Barca = new TLocation('Barcelona');
     	var Ger = new TLocation('Gerona');
- 		var St = new TLocation('Stockholm');
- 		var NY = new TLocation('New York JFK');
+    	var St = new TLocation('Stockholm');
+    	var NY = new TLocation('New York JFK');
 
         var caseList = [
 	        new AirTravelCard(Ger, St, {
